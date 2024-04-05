@@ -1,25 +1,22 @@
-// Dirección IP de ejemplo
-const ipAddress = 'tu_direccion_ip';
+const token = 'f8bc1c28432648';
 
-// URL de la API de GeoIP
-const apiUrl = `https://geoip.maxmind.com/geoip/v2.1/city/${ipAddress}?demo=1`;
-
-// Realizar la solicitud HTTP GET
-fetch(apiUrl, {
-  headers: {
-    'Authorization': 'Bearer tu_api_key' // Reemplaza 'tu_api_key' con tu propia clave de API si es necesario
-  }
-})
-.then(response => response.json())
-.then(data => {
-  // Obtener la información de la ubicación
-  const city = data.city.names.es;
-  const region = data.subdivisions[0].names.es;
-  const country = data.country.names.es;
-
-  // Mostrar la información en la consola
-  console.log('Ciudad:', city);
-  console.log('Estado/Provincia:', region);
-  console.log('País:', country);
-})
-.catch(error => console.error('Hubo un error al obtener la ubicación:', error));
+fetch(`https://ipinfo.io/json?token=${token}`)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Imprime la respuesta completa para examinar su estructura
+    
+    const city = data.city;
+    const state = data.region; // Accede al campo 'region' para obtener el estado
+    const country = data.country;
+    const postalCode = data.postal;
+    const coordinates = data.loc ? data.loc.split(',') : null;
+    
+    console.log('Ciudad:', city);
+    document.getElementById('city').textContent = city;
+    console.log('Estado:', state);
+    document.getElementById('state').textContent = state;
+    console.log('País:', country);
+    console.log('Código postal:', postalCode);
+    console.log('Coordenadas:', coordinates);
+  })
+  .catch(error => console.error('Hubo un error al obtener la ubicación:', error));
