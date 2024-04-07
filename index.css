@@ -73,3 +73,20 @@ body, html
     color: aliceblue;
     font-size: 20px;
 }
+
+#toggleButton {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #toggleIcon {
+    margin-left: 5px;
+    transition: transform 0.3s ease; /* Agregamos una transición para el efecto de rotación */
+  }
+  
+  .rotated {
+    transform: rotate(180deg);
+  }
+  
