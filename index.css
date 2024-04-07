@@ -75,18 +75,42 @@ body, html
 }
 
 #toggleButton {
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    position: absolute; /* Posicionamos absolutamente el círculo dentro del botón */
+    top: 50%; /* Lo colocamos en el centro verticalmente */
+    left: 50%; /* Lo colocamos en el centro horizontalmente */
+    background-color: #fdeded;
+    border: none;
+    border-radius: 20px;
     padding: 5px 10px;
     cursor: pointer;
+    height: 40px;
+    width: 120px;
+    font-size: larger;
+    font-weight: bold;
   }
   
   #toggleIcon {
     margin-left: 5px;
     transition: transform 0.3s ease; /* Agregamos una transición para el efecto de rotación */
+    color: white;
   }
   
   .rotated {
     transform: rotate(180deg);
+  }
+
+  .circle 
+  {
+    position: absolute; /* Posicionamos absolutamente el círculo dentro del botón */
+    top: 50%; /* Lo colocamos en el centro verticalmente */
+    left: 80%; /* Lo colocamos en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centramos el círculo */
+    width: 20px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 20px;
+    border-radius: 50%; /* Hacemos que el círculo tenga bordes redondeados */
+    background-color: #000000; /* Color blanco para el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
