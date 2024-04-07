@@ -42,15 +42,23 @@ body, html
     font-size: 20px;
 }
 
+
+
 #cita
 {
-    color: aliceblue;
+    position: absolute;
+    left: 140px;
+    color: black;
     height: 120px;
     width: 200px;
 }
 
-#nueva-cita {
-    background-color: blue;
+#nueva-cita
+{
+    position: absolute;
+    top:50px;
+    left: 370px;
+    background-color: transparent;
     color: white;
     border: none;
     border-radius: 50%;

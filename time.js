@@ -11,7 +11,7 @@ function getTime() {
       if (horaFormatoLocal >= 6 && horaFormatoLocal < 18) 
       {
           document.body.style.backgroundImage = "url('./Imagenes/bg-image-daytime.jpg')";
-          smallImage.src = "./Imagenes/bg-image-daytime.jpg";
+          smallImage.src = "./Imagenes/icon-sun.svg";
           wave.textContent = "GOOD MORNING, IT´S CURRENTLY";
       }
 
