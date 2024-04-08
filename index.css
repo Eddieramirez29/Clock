@@ -140,11 +140,26 @@ body, html {
     top: 20px;
     left: 300px;
   }
+
   #country
   {
     font-weight: bolder;
     position: absolute;
     left: 50%;
     top: 25px;
+  }
+
+  #day-of-year
+  {
+    position: absolute;
+    left: 22%;
+    top: 70px;
+  }
+
+  #day-of
+  {
+    position: absolute;
+    left: 50%;
+    font-weight: bolder;
   }
   
