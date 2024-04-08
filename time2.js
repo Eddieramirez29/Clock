@@ -5,7 +5,8 @@ let fecha = new Date();
 let diaSemana = fecha.getDay();
 
 // Array con los nombres de los días de la semana
-let nombresDias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+let nombresDias = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let nombreDia = nombresDias[diaSemana];
 
 // Obtener el número de la semana
@@ -33,8 +34,9 @@ function getDayOfYear(date) {
   return day;
 }
 
-// Imprimir los resultados
+
 document.getElementById('day-of').textContent = numDiaAnio;
-console.log("Día de la semana:", nombreDia);
-console.log("Número de la semana:", numSemana);
-console.log("Número del día del año:", numDiaAnio);
+document.getElementById('day-of-the').textContent = nombreDia;
+document.getElementById('week').textContent = numSemana;
+
+
