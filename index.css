@@ -133,4 +133,18 @@ body, html {
     height: 125px; /* Altura de la línea, 100% del cuadro menos el espacio superior e inferior */
     background-color: black; /* Color de la línea vertical */
   }
+
+  #time-zone
+  {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+  }
+  #country
+  {
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+  }
   

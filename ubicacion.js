@@ -7,13 +7,14 @@ fetch(`https://ipinfo.io/json?token=${token}`)
     
     const city = data.city;
     const state = data.region; // Accede al campo 'region' para obtener el estado
-    // const country = data.country;
+    const country = data.country;
     // const postalCode = data.postal;
     // const coordinates = data.loc ? data.loc.split(',') : null;
     
 
     document.getElementById('city').textContent = city;
     document.getElementById('state').textContent = state + ",";
+    document.getElementById('country').textContent = country
 
   })
   .catch(error => console.error('Hubo un error al obtener la ubicación:', error));
