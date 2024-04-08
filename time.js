@@ -10,15 +10,15 @@ function getTime() {
       // Cambiar el fondo de pantalla según la hora del día
       if (horaFormatoLocal >= 6 && horaFormatoLocal < 18) 
       {
-          document.body.style.backgroundImage = "url('./Imagenes/bg-image-daytime.jpg')";
-          smallImage.src = "./Imagenes/icon-sun.svg";
+          document.body.style.backgroundImage = "url('./bg-image-daytime.jpg')";
+          smallImage.src = "./icon-sun.svg";
           wave.textContent = "GOOD MORNING, IT´S CURRENTLY";
       }
 
       else
       {
-          document.body.style.backgroundImage = "url('./Imagenes/bg-image-nighttime.jpg')";
-          smallImage.src = "./Imagenes/icon-moon.svg";
+          document.body.style.backgroundImage = "url('./bg-image-nighttime.jpg')";
+          smallImage.src = "./icon-moon.svg";
           wave.textContent = "GOOD NIGHT, IT´S CURRENTLY";
       }
     })
