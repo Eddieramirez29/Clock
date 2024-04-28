@@ -1,5 +1,5 @@
 function getTime() {
-  fetch('http://worldtimeapi.org/api/ip')
+  fetch('https://worldtimeapi.org/api/ip')
     .then(response => response.json())
     .then(data => {
       const horaActual = new Date(data.datetime);
