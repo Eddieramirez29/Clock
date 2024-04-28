@@ -9,18 +9,20 @@ function getTime() {
       const wave = document.getElementById('wave');
       // Cambiar el fondo de pantalla según la hora del día
       if (horaFormatoLocal >= 6 && horaFormatoLocal < 18) 
-      {
-          document.body.style.backgroundImage = "url('./Pictures/bg-image-daytime.jpg')";
-          smallImage.src = "./Pictures/icon-sun.svg";
-          wave.textContent = "GOOD MORNING, IT´S CURRENTLY";
-      }
+{
+    document.body.style.backgroundImage = "url('https://Eddieramirez29.github.io/Clock/Pictures/bg-image-daytime.jpg')";
+    smallImage.src = "https://Eddieramirez29.github.io/Clock/Pictures/icon-sun.svg";
+    wave.textContent = "GOOD MORNING, IT´S CURRENTLY";
+}
 
-      else
-      {
-          document.body.style.backgroundImage = "url('./Pictures/bg-image-nighttime.jpg')";
-          smallImage.src = "./Pictures/icon-moon.svg";
-          wave.textContent = "GOOD NIGHT, IT´S CURRENTLY";
-      }
+else
+{
+    document.body.style.backgroundImage = "url('https://Eddieramirez29.github.io/Clock/Pictures/bg-image-nighttime.jpg')";
+    smallImage.src = "https://Eddieramirez29.github.io/Clock/Pictures/icon-moon.svg";
+    wave.textContent = "GOOD NIGHT, IT´S CURRENTLY";
+}
+
+
     })
     .catch(error => console.error('Hubo un error al obtener la hora:', error));
 }
